@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded Videos</title>
+    <style>
+        @font-face {
+        font-family: 'Font1';
+        src: url('Fonts/Font1.ttf') format('truetype'); 
+        }
+        @font-face {
+        font-family: 'Font2';
+        src: url('Fonts/Font1.ttf') format('truetype'); 
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #00247d; /* Dark Blue background */
+            color: #fff; /* White text */
+            text-align: center;
+            padding: 20px;
+        }
+        #top-bar {
+            z-index: 20;
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            height: 80px;
+            width: 100%;
+            background-color: #fff5f5;
+            box-shadow: 3px 3px 10px rgb(20, 20, 20);
+        }
+        .video-container {
+            position: relative;
+            top: 30px;
+            border-radius: 30px;
+            box-shadow: 3px 3px 10px rgb(29, 29, 29);
+            background-color: #ffffff87;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+        .video {
+            border-radius: 30px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-family: 'Font1';
+            color: #540012;
+        }
+    </style>
+</head>
+<body>
+    <div id="top-bar"><h1>The Uk's scientific achievments</h1></div>
+    <div class="video-container">
+        <br>
+        <br>
+        <div class="video">
+            <video width="560" height="315" controls>
+                <source src="your-local-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>Local MP4 Video</p>
+        </div>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ZhTMoeCIIbg" frameborder="0" allowfullscreen></iframe>
+            <p>YouTube Video</p>
+        </div>
+    </div>
+</body>
+</html>
