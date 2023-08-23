@@ -66,8 +66,22 @@
             color: #540012;
         }
         #background-image {
-            z-index: -1;
-        }
+  /* The image used */
+  background-image: url("https://i.ibb.co/yWG8rp4/IMG-0021.jpg");
+
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
     </style>
 </head>
 <body>
@@ -75,7 +89,8 @@
     <div class="video-container">
         <br>
         <br>
-            <img id="background-image" src="https://i.ibb.co/yWG8rp4/IMG-0021.jpg">
+            <div id="background-image">
+                </div>
         <div class="video">
             <video width="560" height="315" controls>
                 <source class="video" src="your-local-video.mp4" type="video/mp4">
