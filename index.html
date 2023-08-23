@@ -46,7 +46,6 @@
             left: 0px;
             top: 0px;
             border-radius: 30px;
-            width: 100%;
             margin-bottom: 20px;
             box-shadow: 3px 3px 10px black;
         }
@@ -55,7 +54,6 @@
             left: -20px;
             top: -20px;
             border-radius: 30px;
-            width: 100%;
             margin-bottom: 20px;
             box-shadow: 10px 23px 30px white;
         }
@@ -71,16 +69,14 @@
     <div class="video-container">
         <br>
         <br>
-        <div class="video">
+        <div>
             <video width="560" height="315" controls>
-                <source src="your-local-video.mp4" type="video/mp4">
+                <source class="video" src="your-local-video.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-            <p>Local MP4 Video</p>
         </div>
-        <div class="video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/ZhTMoeCIIbg" frameborder="0" allowfullscreen></iframe>
-            <p>YouTube Video</p>
+        <div>
+            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/ZhTMoeCIIbg" frameborder="0" allowfullscreen></iframe>
         </div>
     </div>
 </body>
