@@ -6,7 +6,6 @@ days = Math.floor((currentDate - startDate) /
 week = Math.ceil(days / 7);
 table = Math.floor(week/2)%3 + 1;
 window.setInterval(() => {
-    week++;
     table = Math.floor(week/2)%3 + 1;
     console.log("week "+week+", table "+table)
     document.getElementById("desk"+table).innerHTML="<br>Lukas,  Joshua,  Jayden,  Renas";
