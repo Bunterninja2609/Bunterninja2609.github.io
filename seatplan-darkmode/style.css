@@ -72,6 +72,8 @@ h1:hover {
     -webkit-text-stroke: 0.25vw rgb(0, 132, 255);
     line-height: 1vw;
     font-size: 20vw;
+    width: 100%;
+    height: 100%;
 }
 
 body {
