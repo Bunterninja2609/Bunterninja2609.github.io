@@ -4,7 +4,7 @@ days = Math.floor((currentDate - startDate) /
     (24 * 60 * 60 * 1000));
  
 week = Math.ceil(days / 7);
-table = Math.floor(week/2)%3 + 1;
+table = Math.floor(week/2 -1)%3 + 1;
 window.setInterval(() => {
     table = Math.floor(week/2)%3 + 1;
     console.log("week "+week+", table "+table)
