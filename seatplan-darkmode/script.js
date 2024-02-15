@@ -3,7 +3,7 @@ startDate = new Date(currentDate.getFullYear(), 0, 1);
 days = Math.floor((currentDate - startDate) /
     (24 * 60 * 60 * 1000));
  
-week = Math.ceil(days / 7);
+week = Math.ceil(days / 7)+1;
 table = Math.floor(week/2)%3 + 1;
 window.setInterval(() => {
     table = Math.floor(week/2)%3 + 1;
