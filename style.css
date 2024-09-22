@@ -1,0 +1,55 @@
+button{
+    background-color: none;
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	outline: inherit;
+}
+body {
+    background-color: #087e8b;
+    font-size: larger;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #f5f5f5;
+}
+.numBut{
+    font-size: 150%;
+    font-weight: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: none;
+    text-shadow: 0px 2px 20px rgb(0, 213, 255),  0px -2px 20px rgb(0, 213, 255),  2px 0px 20px rgb(0, 213, 255), -2px 0px 20px rgb(0, 213, 255);
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+#buttons {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    background-color: #3c3c3c;
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+}
+#start{
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 10px;
+    color: 2e4052;
+    background-color:#ff5a5f;
+}
+#waitTimeInput{
+    background: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    font-weight: 900;
+	color: inherit;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	outline: inherit;
+    width: 20px;
+}
