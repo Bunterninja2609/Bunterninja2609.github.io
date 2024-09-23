@@ -7,6 +7,15 @@ var nextNum = 1;
 var totalNumOfNum = 0;
 var steps = 10;
 var waitTimeInput = document.getElementById("waitTimeInput");
+function reset(){
+    for (let index = 1; index <= 9; index++) {
+        document.getElementById("button" + index).innerHTML = " "+index+" ";
+        document.getElementById("button" + index).style.background = "none";
+        document.getElementById("button" + index).style.position = "absolute";
+    }
+    isHidden = false;
+    timer = 0;
+}
 function startTest() {
     for (let index = 1; index <= 9; index++) {
         document.getElementById("button" + index).innerHTML = " "+index+" ";
@@ -70,6 +79,8 @@ function enterNum(number){
         document.getElementById("button" + number).innerHTML = "";
         document.getElementById("button" + number).style.background = "none";
         //document.getElementById("button" + index).style.boxShadow = "none";
+    } else {
+        reset()
     };
 };
 function hide(bool){
