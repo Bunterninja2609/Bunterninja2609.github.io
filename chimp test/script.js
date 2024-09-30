@@ -25,12 +25,12 @@ function startTest() {
 
     autoHide = !document.getElementById("autoHide").checked;
     isHidden = false;
-    waitTime = Number(waitTimeInput.value)
+    waitTime = Number(waitTimeInput.value);
     isRunning = true;
     nextNum = 1;
     timer = 0;
     totalNumOfNum = 0;
-    rearrangeBoxes()
+    rearrangeBoxes();
 };
 function rearrangeBoxes(){
     for (let index = 1; index <= 9; index++) {
